@@ -11,6 +11,7 @@
 *Website Feature* 
 
  - tag posts
+    *   IP: continue from step 5 on https://longqian.me/2017/02/09/github-jekyll-tag/ 
  - ~~detached from forked repo~~ 
 
 # About 
