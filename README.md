@@ -10,19 +10,13 @@
 
 *Website Feature* 
 
- - tag posts
-    *   IP: continue from step 5 on https://longqian.me/2017/02/09/github-jekyll-tag/ 
-        *   ~~FIXED issue 1: tag name style~~ 
-        *   issue 2: tag page not exist 
- - ~~detached from forked repo~~ 
-
 # About 
-This repository contains all the files used to build my [GitPage](https://tanyayt.github.io/). The process is well documented in this 
-Detailed Walk-through [**Build A Blog With Jekyll And GitHub Pages**](http://www.smashingmagazine.com/2014/08/01/build-blog-jekyll-github-pages/). 
+This repository contains all the files used to build my [GitPage](https://tanyayt.github.io/) following the instructions: [**Build A Blog With Jekyll And GitHub Pages**](http://www.smashingmagazine.com/2014/08/01/build-blog-jekyll-github-pages/). 
 
 # Tips
 1.  Create new page: create markdown file and remember to change the permanent link,eg. /resume/
 2.  Use Links: Be sure to use permannt links, e.g. `{{ site.baseurl }}/`
+3.  Create tags: a. create tagABC.md in `\tags` folder, then you can start using the new tag (more details here (https://longqian.me/2017/02/09/github-jekyll-tag/)
 
 
 
