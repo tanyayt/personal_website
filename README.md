@@ -12,7 +12,7 @@
 
  - tag posts
     *   IP: continue from step 5 on https://longqian.me/2017/02/09/github-jekyll-tag/ 
-        *   issue 1: tag name style 
+        *   ~~FIXED issue 1: tag name style~~ 
         *   issue 2: tag page not exist 
  - ~~detached from forked repo~~ 
 
