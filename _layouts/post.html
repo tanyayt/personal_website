@@ -14,15 +14,14 @@ layout: default
   </div>
 
 <! –– to add tags  ––>
-  <div class="snippets">
-    <h3 class="snippets-heading">Articles tagged with "{{ page.tag-name }}"</h3>
-
-   {% for post in site.posts %}
-     {% if post.tags contains page.tag-name %}
-      	{% include snippet.html %}
-    {% endif %}
-   {% endfor %}
-  </div>
+  
+<h5><span>[
+  {% for tag in page.tags %}
+    {% capture tag_name %}{{ tag }}{% endcapture %}
+    <a href="/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code>&nbsp;</a>
+  {% endfor %}
+]</span></h5>
 
 <! –– end of adding tags  ––>
+
 </article>
