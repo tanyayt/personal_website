@@ -11,6 +11,7 @@
 *Website Feature* 
 
  - tag posts
+ - ~~detached from forked repo~~ 
 
 # About 
 This repository contains all the files used to build my [GitPage](https://tanyayt.github.io/). The process is well documented in this 
