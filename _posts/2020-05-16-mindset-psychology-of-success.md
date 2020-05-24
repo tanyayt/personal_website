@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Mindset: the New Psychology of Success"
+tags: self-improvement
 ---
 
 [Mindset: the New Psychology of Success](https://www.goodreads.com/book/show/40745.Mindset) is written by Stanford psychologies Carol S. Dweck, who discusses how mindsets can affect success in school, work, and life. In summary, a fixed mindset believes intelligence, character, and ability are unchangeable whereas a growth mindset believes the possibility to develop and grow. People with fixed mindsets seek approvals and fear failures; people with growth mindsets learn from criticism and embrace challenges. 
