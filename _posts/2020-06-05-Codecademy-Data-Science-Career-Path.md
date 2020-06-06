@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Review: Codecademy Data Science Career Path"
-tags: "data science"
+tags: datascience
 ---
 
 # What I have learned
