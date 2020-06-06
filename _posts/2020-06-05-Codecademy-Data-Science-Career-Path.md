@@ -1,5 +1,5 @@
 ---
-layout:post
+layout: post
 title: "Review: Codecademy Data Science Career Path"
 tags: "data science"
 ---
@@ -27,7 +27,7 @@ Day 4: completed module 6
 
 Day 21: Completed the program and obtained the certificate
 
-![image-20200605203548099](D:\github\tanyayt.github.io\_posts\DRAFT 2020-06-Codecademy.assets\image-20200605203548099.png)
+![certificate](https://github.com/tanyayt/tanyayt.github.io/blob/master/images/codecademy-data-science.png?raw=true)
 
 
 
