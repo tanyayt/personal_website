@@ -12,7 +12,7 @@ Airbnb has transformed travel and the vacation rental industry in numerous ways.
 
 ## How does the availability change throughout the year? 
 
-<img src="https://github.com/tanyayt/udacity_data_scientist/blob/master/boston_airbnb_analysis/availability_trend_daily.png" style="width: 400px;"/>
+<img src="https://github.com/tanyayt/udacity_data_scientist/blob/master/boston_airbnb_analysis/availability_trend_daily.png?raw=true" style="width: 900px;"/>
 
 
 
