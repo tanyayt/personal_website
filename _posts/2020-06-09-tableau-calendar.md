@@ -10,5 +10,29 @@ Yes, you can build a calendar heatmap using Tableau!
 
 1.  Create a calculated field [week index]
 
+    <img src ="https://github.com/tanyayt/tanyayt.github.io/blob/master/images/tableau_calendar_week_index.PNG?raw=true" width="400px"> 
+
     
+
+2.  Drag `WEEKDAY(Date)` to columns; drag `MONTH(Date)` and `week_index` to Rows
+
+3.  Drag quantitative field of your choice to Color
+
+4.  Drag any additional columns to tooltip and/or detail as needed 
+
+    <img src="https://github.com/tanyayt/tanyayt.github.io/blob/master/images/tableau_calendar_row_col.PNG?raw=true" height ="400px"> 
+
+5.  You might have noticed the original dashboard also has a hover-over effect so you can see how a second measure (in this case "rental rate" changes in the selected week)
+
+    <img src="https://github.com/tanyayt/tanyayt.github.io/blob/master/images/tableau_calendar_tool_tip.PNG?raw=true" height="300px"> 
+
+To create this effect, build a line chart with `DAY[date]` on Columns, and quantitative measures on rows. Add labels as needed and any color schemes as needed. 
+
+<img src="https://github.com/tanyayt/tanyayt.github.io/blob/master/images/tableau_calendar_price_chart.PNG?raw=true" height="400px"> 
+
+6.  Lastly, insert the sheet to the calendar sheet's tool tip, set the filter equal to, in this case, "week number" 
+
+    <img src="https://github.com/tanyayt/tanyayt.github.io/blob/master/images/tableau_calendar_weeknumber.PNG?raw=true" height="100px" align ="left">
+
+<img src="https://github.com/tanyayt/tanyayt.github.io/blob/master/images/tableau_calendar_tooltip_sheet.PNG?raw=true" height= "400px" align="left">
 
