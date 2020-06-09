@@ -16,11 +16,15 @@ Airbnb has transformed travel and the vacation rental industry in numerous ways.
 
 
 
-Availability is defined as the % of listings available. Availability reaches its highest point in early December 2016, and its lowest point in mid-September 2016. It is unusual to that Sept 2017 doesn't see a low availability as in Sept 2016. Let's examine the total number of available units to see if we see a higher supply in Sept 2017. 
+Availability is defined as the % of listings available. Availability reaches its highest point in early December 2016, and its lowest point in mid-September 2016. The total available listings follow a similar trend. 
 
+<img src="https://github.com/tanyayt/udacity_data_scientist/blob/master/boston_airbnb_analysis/available_counts_trend_daily.png?raw=true" style="width: 900px;"/>
 
+Finally, let's see how availability changes throughout the week. 
 
+<img src="https://github.com/tanyayt/udacity_data_scientist/blob/master/boston_airbnb_analysis/availability_weekly.png?raw=true" style="width: 500px;"/>
 
+<img src="https://github.com/tanyayt/udacity_data_scientist/blob/master/boston_airbnb_analysis/available_count_weekly.png?raw=true" width="500px">
 
 # How does availability change throughout the week? 
 
