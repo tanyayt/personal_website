@@ -26,13 +26,15 @@ Finally, let's see how availability changes throughout the week.
 
 <img src="https://github.com/tanyayt/udacity_data_scientist/blob/master/boston_airbnb_analysis/available_count_weekly.png?raw=true" width="500px">
 
-# How does availability change throughout the week? 
+
+
+# How much does each type of rooms cost in different neighborhoods? 
+
+<img src="https://github.com/tanyayt/udacity_data_scientist/blob/master/boston_airbnb_analysis/average_price_by_neighbourhood_room_type.png?raw=true" width="800px">
+
+# Can we predict the price? 
 
 Each question is answered with a clear visual, table, or statistic that provides how the data supports or disagrees with some hypothesis that could be formed by each question of interest.
-
-# Takeaway 3 
-
-
 
 # Conclusion 
 
