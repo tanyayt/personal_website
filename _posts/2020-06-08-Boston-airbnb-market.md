@@ -53,4 +53,4 @@ In summary, the results suggest in Boston, Airbnb rentals are most available in 
 
 Our initial attempt to build a prediction model is satisfactory. Using room type, neighbourhood, bedrooms, bathrooms, beds, and review ratings as predictors, we are able to capture about 60% of the variance in the data. 
 
-*View all the project files and codes in [Github Repository](https://github.com/tanyayt/udacity_data_scientist)*
+*View all the project files and codes in [Github Repository](https://github.com/tanyayt/udacity_data_scientist/tree/master/boston_airbnb_analysis)*
