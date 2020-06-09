@@ -9,7 +9,7 @@ Yes, you can build a calendar heatmap using Tableau!
 1.  Create a calculated field [week index]
 
     <img src ="https://github.com/tanyayt/tanyayt.github.io/blob/master/images/tableau_calendar_week_index.PNG?raw=true" width="350px"> 
- 
+
 2.  Drag `WEEKDAY(Date)` to columns; drag `MONTH(Date)` and `week_index` to Rows; drag quantitative field of your choice to Color; Drag any additional columns to tooltip and/or detail as needed 
 
     <img src="https://github.com/tanyayt/tanyayt.github.io/blob/master/images/tableau_calendar_row_col.PNG?raw=true" height ="300px"> 
@@ -18,8 +18,9 @@ Yes, you can build a calendar heatmap using Tableau!
 
 <img src="https://github.com/tanyayt/tanyayt.github.io/blob/master/images/tableau_calendar_price_chart.PNG?raw=true" height="300px"> 
 
-4.  Lastly, insert the sheet to the calendar sheet's tool tip, set the filter equal to, in this case, "week number" 
+4.  Insert the sheet to the calendar sheet's tool tip, set the filter equal to, in this case, "week number" 
 
 <img src="https://github.com/tanyayt/tanyayt.github.io/blob/master/images/tableau_calendar_weeknumber.PNG?raw=true" height="80px" align ="left">
 
 <img src="https://github.com/tanyayt/tanyayt.github.io/blob/master/images/tableau_calendar_tooltip_sheet.PNG?raw=true" height= "300px" align="left">
+
