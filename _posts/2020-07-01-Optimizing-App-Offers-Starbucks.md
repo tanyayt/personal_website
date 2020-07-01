@@ -144,13 +144,11 @@ It is also noticed that we have outliers in purchase amounts.
 
 *   `df_view_events`: dataframe containing events when offers are viewed 
 
-    <img src="https://github.com/tanyayt/tanyayt.github.io/blob/master/images/2020-07/df_view_events_clean.PNG?raw=true" title="df_view_events" width=500px> 
+<img src="https://github.com/tanyayt/tanyayt.github.io/blob/master/images/2020-07/df_view_events_clean.PNG?raw=true" title="df_view_events" width=500px> 
 
-    <img src="" title ="customers can have multiple views"> 
+Since customers can have received multiple offers, it is expected they have multiple view events. For one offer_id, customers could have viewed them for more than once. 
 
-    Since customers can have received multiple offers, it is expected they have multiple view events. For one offer_id, customers could have viewed them for more than once. 
-
-    <img src="https://github.com/tanyayt/tanyayt.github.io/blob/master/images/2020-07/multiple_view_each_offer.png?raw=true" title ="customers can view the same offer multiple times" width="400px"> 
+<img src="https://github.com/tanyayt/tanyayt.github.io/blob/master/images/2020-07/multiple_view_each_offer.png?raw=true" title ="customers can view the same offer multiple times" width="400px"> 
 
 *   `df_complete_events` : dataframe containing events when offers are completed 
 
