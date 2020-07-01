@@ -1,13 +1,9 @@
 ---
 layout: post
-title: "Boston Airbnb Rental Market: Availability Trend and Pricing Model"
+title: "Optimizing Starbucks App Offers with Machine Learning Algorithm "
 ---
 
-# Optimizing Starbucks App Offers with Machine Learning Algorithm 
-
-<img src="https://github.com/tanyayt/tanyayt.github.io/blob/master/images/header_starbucks_app.jpg?raw=true" width="900px">
-
-
+<img src="https://github.com/tanyayt/tanyayt.github.io/blob/master/images/header_starbucks_app.jpg?raw=true" width="500px">
 
 # [DONE] The Project 
 
