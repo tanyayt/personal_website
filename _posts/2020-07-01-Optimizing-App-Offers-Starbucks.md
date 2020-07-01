@@ -23,7 +23,7 @@ There are some challenges that need to be tackled in the datasets. For example, 
 
 The metrics I used in this project is weighted accuracy of the Random Forest Classification model. 
 
-# Analysis 
+# [IP] Analysis 
 
 This section outlines the key steps included in data exploration, cleaning, pre-processing, model implementation and refinement. Selected visualizations are included. For more information, please visit my [repository on Github](https://github.com/tanyayt/udacity_data_scientist/tree/master/starbucks_optimizing_app_offers)
 
@@ -201,21 +201,51 @@ g= sns.heatmap(offer_counts_per_customer.corr(),annot=True,cmap='coolwarm',vmin=
 g.set(title="Heatmap showing weak correlations between number of offers received and customer demogrpahics")
 ```
 
-<img src="https://github.com/tanyayt/tanyayt.github.io/blob/master/images/2020-07/heatmap_offer_receive_counts.png?raw=true" width=600> 
+![heatmap](https://github.com/tanyayt/tanyayt.github.io/blob/master/images/2020-07/heatmap_offer_receive_counts2.png?raw=true)
+
+### Left join with  view events and offers data
+
+I continue the left join the dataframe from the previous step, with events and offers data. I also computed the expiry time of the offer. We'll then remove the rows where view time is before the receive time or after the expiry time. These rows are produced from the join results because one customer can receive the same offer_id multiple times. 
+
+```python
+df_receive_view_customers = pd.merge(df_receive_customers,df_view_events,how='left'
+                                       ,on=['customer_id','offer_id'])
+
+df_receive_view_customers_offers = pd.merge(df_receive_view_customers,df_offers
+                                           ,on='offer_id',how='left')
+
+#compute expiry time
+df_receive_view_customers_offers['expiry_time']=df_receive_view_customers_offers['receive_time']
+                                              +df_receive_view_customers_offers['duration_hours']
+
+#filter out views that are outside the receive and expiry time
+df_receive_view_customers_offers_clean = df_receive_view_customers_offers.drop(                                   df_receive_view_customers_offers[(df_receive_view_customers_offers.view_time <= df_receive_view_customers_offers.receive_time) | (df_receive_view_customers_offers.view_time >= df_receive_view_customers_offers.expiry_time)]
+                                         .index,axis=0)
+```
+
+### Left Join with Completion Data and Filter  
+
+Following the same logic, I left join the resulting dataframe from above, with completion event data, and then remove the rows where completion time is after the expiry time or before the receive time. 
+
+```python
+df_combined = pd.merge(df_receive_view_customers_offers_clean,df_complete_events, how ='left',on=['customer_id','offer_id'])
+
+#filter
+df_combined = df_combined.drop(df_combined[(df_combined.complete_time <= df_combined.receive_time) | (df_combined.complete_time >= df_combined.expiry_time)]
+                                .index,axis=0)
+```
+
+### Consolidate Multiple View Events and Completion Events
+
+To create a unique identifier using: customer_id, offer_id, and receive_time, I then aggregate the rows, by consolidating the rows associated with multiple view or multiple completion events of the same offer, received at the same time. 
+
+The process is rather complex so please visit my [Python Notebook](https://github.com/tanyayt/udacity_data_scientist/blob/master/starbucks_optimizing_app_offers/Starbucks_Capstone_notebook.ipynb) to see how NaNs are handled in GroupBy calculations.The end result is that we have 1 and only 1 row in the dataframe df_combined, with each combination of customer_id, offer_id, and receive_time
+
+<img src="https://github.com/tanyayt/tanyayt.github.io/blob/master/images/2020-07/df_combined_unique.PNG?raw=true" title="unique df_combined" width=500> 
 
 
 
-
-
-### Combine..... and filter out 
-
-
-
-### Combine.... and filter out ...... 
-
-
-
-### Combine ....and filter out.... 
+ 
 
 ### Completion Rate Calculation
 
