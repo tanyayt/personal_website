@@ -5,7 +5,7 @@ title: "Optimizing Starbucks App Offers with Machine Learning Algorithm "
 
 <img src="https://github.com/tanyayt/tanyayt.github.io/blob/master/images/header_starbucks_app.jpg?raw=true" width="500px">
 
-# [DONE] The Project 
+# The Project 
 
 ## Project Overview 
 
@@ -23,7 +23,7 @@ There are some challenges that need to be tackled in the datasets. For example, 
 
 The metrics I used in this project is weighted accuracy of the Random Forest Classification model. 
 
-# [IP] Analysis 
+# Analysis 
 
 This section outlines the key steps included in data exploration, cleaning, pre-processing, model implementation and refinement. Selected visualizations are included. For more information, please visit my [repository on Github](https://github.com/tanyayt/udacity_data_scientist/tree/master/starbucks_optimizing_app_offers)
 
