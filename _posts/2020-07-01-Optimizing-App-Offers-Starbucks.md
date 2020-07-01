@@ -188,7 +188,26 @@ purchase_events_clean = purchase_events # initialize the clean dataset
 
 This section outlines how I combined customers' data (), offers data (), offer-receiving event data (), offer viewing data(), offer completion data, and purchase event data () together, and filter out duplicated rows resulted from multiple receiving,viewing, and purchase events. 
 
-### Combine.....  and Filter 
+### Left join receive events data with customer data
+
+```python
+df_receive_customers = pd.merge(df_receive_events,df_customers,how='left',on='customer_id')
+```
+
+I first left joined the receive events data with customer data and built a heatmap (below) to check whether there are any correlations between the number of offers customers received, and their demographic characteristics. The correlations are weak. 
+
+```python
+#calculate number of offers each customer received
+offer_counts_per_customer = df_receive_customers.groupby(['customer_id','age','is_female','membership_days'])['offer_id'].count().reset_index().rename(columns={'offer_id':'offer_count'})
+
+#create heatmap
+g= sns.heatmap(offer_counts_per_customer.corr(),annot=True,cmap='coolwarm',vmin=-1)
+g.set(title="Heatmap showing weak correlations between number of offers received and customer demogrpahics")
+```
+
+<img src="https://github.com/tanyayt/tanyayt.github.io/blob/master/images/2020-07/heatmap_offer_receive_counts.png?raw=true" width=600> 
+
+
 
 
 
