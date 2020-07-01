@@ -180,7 +180,7 @@ purchase_events_clean = purchase_events # initialize the clean dataset
     
 ## Data Pre-Processing
 
-This section outlines how I combined customers' data (), offers data (), offer-receiving event data (), offer viewing data(), offer completion data, and purchase event data () together, and filter out duplicated rows resulted from multiple receiving,viewing, and purchase events. 
+This section outlines how I combined customers' data (df_customers), offers data (df_offers), offer-receiving event data (df_receive_events), offer viewing data(df_view_events), offer completion data (df_complete_events), and purchase event data (df_purchase_events) together, and filter out duplicated rows resulted from multiple receiving,viewing, and purchase events. 
 
 ### Left join receive events data with customer data
 
