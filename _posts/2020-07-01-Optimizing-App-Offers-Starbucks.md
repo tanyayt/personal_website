@@ -11,7 +11,7 @@ title: "Optimizing Starbucks App Offers with Machine Learning Algorithm "
 
 Customer Loyalty program is one of the most widely used marketing strategies to improve customer engagement. Starbucks sends their promotional offers to customers via email, social media channels or to their mobile Apps. It is important to understand customer behaviors in response to these offers to optimize the offer selections for them. In this project, I took a deep dive into Starbucks App data and built a machine learning model to predict whether a user will complete a promotional offer. 
 
-The project is part of Udacity's Data Scientist Nanodegree program and the datasets are simulated and provided by Starbucks. The raw data are in json format, providing information about promotional offers (e.g. offer type and duration), customers (e.g. demographic and membership), and their transaction history in the app (e.g. when offers are received, viewed and completed). More discussions on the datasets will be provided in Section: Exploratory Data Analysis. 
+The project is part of Udacity's Data Scientist Nanodegree program and the datasets are simulated and provided by Starbucks. The raw data are in json format, providing information about promotional offers (e.g. offer type and duration), customers (e.g. demographic and membership), and their transaction history in the app (e.g. when offers are received, viewed and completed). 
 
 ## Problem Statement 
 
@@ -101,7 +101,7 @@ After processing, the channel column is now replaced by 3 dummy-coded columns `h
 
 The final data seems to have a balanced distribution in terms of age, gender and income. 
 
- Transaction Data
+### Transaction Data
 
 -   `transcript.json` - 306534 rows X 5 columns, records for transactions, offers received, offers viewed, and offers completed (no missing values)
     -   event (str) - record description (ie transaction, offer received, offer viewed, etc.)
