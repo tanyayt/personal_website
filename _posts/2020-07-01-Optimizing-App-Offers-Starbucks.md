@@ -241,64 +241,207 @@ To create a unique identifier using: customer_id, offer_id, and receive_time, I 
 
 The process is rather complex so please visit my [Python Notebook](https://github.com/tanyayt/udacity_data_scientist/blob/master/starbucks_optimizing_app_offers/Starbucks_Capstone_notebook.ipynb) to see how NaNs are handled in GroupBy calculations.The end result is that we have 1 and only 1 row in the dataframe df_combined, with each combination of customer_id, offer_id, and receive_time
 
-<img src="https://github.com/tanyayt/tanyayt.github.io/blob/master/images/2020-07/df_combined_unique.PNG?raw=true" title="unique df_combined" width=500> 
+<img src="https://github.com/tanyayt/tanyayt.github.io/blob/master/images/2020-07/df_combined_unique.PNG?raw=true" title="unique df_combined" width=600> 
+
+### Left Join with Purchase Events and Filter 
+
+As mentioned before, an informational offer does not have a valid "offer completion" event so we have to assume that  if a customer makes a purchase between receiving the offer and the offer's expiry time, we consider that the customer has completed the offer. Again, we use the same logic to remove rows that the purchase events happened before receive time or after expiry time. Lastly, since customer can still make multiple purchases in between these times, we use groupby again to consolidate all purchases, and keep 1 single row for each unique combination of customer_id, offer_id, and receive_time. 
+
+Lastly, I assigned completion status to 1, if an informational offer was received, and followed by purchase events before its expiry time.  
+
+```python
+df_combined_purchase = pd.merge(df_combined,df_purchase_events,how='left',on='customer_id')
+# only keep the purchase when the purchase is between receive_time and expiry_time, and when offer is informational
+df_combined_purchase = df_combined_purchase[(df_combined_purchase.receive_time <= df_combined_purchase.purchase_time) \
+                                            & (df_combined_purchase.purchase_time >= df_combined_purchase.expiry_time)]
+
+#consolidate multiple purchases
+purchase_counts_amount = df_combined_purchase.groupby(['customer_id','offer_id','receive_time'])['purchase_amount']\
+                                             .agg(['count','sum']).reset_index()\
+                                             .rename(columns={'count':'purchase_count','sum':'purchase_amount'})
+#join back to the main dataset 
+df_combined  = pd.merge(df_combined,purchase_counts_amount,how='left',on=['customer_id','offer_id','receive_time'])
+
+#assign completion status to informational offers
+df_combined['is_complete'] = [1 if ((a==1) & (b>0)) else c for (a,b,c) in \                  zip(df_combined.is_informational,df_combined.purchase_count,df_combined.is_complete)]
+```
+
+### Calculate Completion Rate 
+
+Because of our assumption on informational offers, the completion rate could be inflated. We want to get an idea to make sure there are balanced number of rows with complete and incomplete status. 
+
+To do so, I create a function to calculate completion rate: 
+
+```python
+def completion_rate(df_combined,column):
+    '''
+    Args: df_combined - the consolidated dataframe as above 
+          column -string column name
+    Returns: None
+    Calculate and prints completion rate when the selected column's value is 1 
+    '''
+    df_subset = df_combined[df_combined[column]==1]
+    total_completion =  df_subset['is_complete'].sum()
+    total_cases = df_subset['is_complete'].notnull().sum()
+    completion_rate = total_completion/total_cases
+    print("When column {} value is 1, the offer completion rate is {}".format(column,completion_rate))
+# check completion rates 
+completion_rate(df_combined,'is_bogo')
+completion_rate(df_combined,'is_informational')
+completion_rate(df_combined,'is_discount')
+```
+
+The results indicate that BOGO, informational, and discount offers have a completion rate of 51%, 81%, and 60% respectively. 
+
+We then checked the completion rates for: 
+
+*   Female users: 74%
+
+*   Male users: 59%
+
+*   Offers sent by email: 60%
+
+*   Offers sent by social media channel: 62% 
+
+*   Offers sent by web: 59% 
+
+*   Offers sent by mobile: 62% 
+
+Gender seems to play a role on offer completion rate however, how offers are sent out seem to have no noticeable impact on the completion rate. 
 
 
 
- 
-
-### Completion Rate Calculation
-
-## Model Implementation 
+## Model Implementation and Refinement
 
 ### A Simplistic Logistic Regression  Model 
 
-Logistic regression....is..... A logistic regression is performed in clean, consolidated dataset (  ),  to predict whether or not a customer completes an offer ('is_complete') 
+Logistic regression is a regression model that uses a logistic function to model a binary outcome. Here I attempted to build a simplistic logistic regression model  to predict whether or not a customer completes an offer ('is_complete') using user-related variables: income, age, gender, and membership days 
 
+Before running regression model, we removed unintended completions, those are completions without view events. We also removed rows with missing values so the regression model can be built. 
 
+```python
+# remove unintended completion 
+df_combined_excl_unintended_completion = df_combined.drop(df_combined[(df_combined.is_viewed==0) & (df_combined.is_complete==1)].index,axis=0 )
 
+#remove missing values 
+df = df_combined_excl_unintended_completion.dropna(how='any',subset=['income','age','is_female','is_complete','membership_days'])
 
-## Model Refinement 
+#split data to train and test 
+X = df[['income','age','is_female','membership_days']]
+y = df['is_complete']
+X_train,X_test,y_train,y_test = train_test_split(X,y,test_size=0.2,random_state=41)
+
+#build logistic regression model
+logreg = LogisticRegression()
+logreg.fit(X_train,y_train)
+
+#predict and evaluate 
+y_pred = logreg.predict(X_test)
+print(classification_report(y_test, y_pred,zero_division=0))
+```
+
+<img src="https://github.com/tanyayt/tanyayt.github.io/blob/master/images/2020-07/log_reg_accuracy.PNG?raw=true)" title="accuracy log reg" width="400px"> 
+
+The accuracy of this model is only 0.61, considering the completion rate of the data used for the model is 59.0%. The prediction accuracy is just slightly better than a random guess. I intentionally reduced the features included in the logistic regression model, to see whether a prediction can be made with the minimum set of variables with decent accuracy. The answer is no, but as expected 
+
+### Model Refinement : Random Forest Model with Hyperparameter Tuning
+
+Finally, I built a Random Forest Model, with both customer and offer characteristics, to predict whether customers have completed and offer. In addition, a grid search of parameters are performed, to optimize the model. 
+
+```python
+# include more offer-related features 
+df= df_combined_excl_unintended_completion[['income','membership_days','age','is_female','is_bogo','is_discount',\
+                           'reward','difficulty','has_email','has_web'\
+                           ,'has_mobile','has_social','is_complete']].dropna(how='any')
+X = df.drop('is_complete',axis=1)
+y = df['is_complete']
+
+#split data to train and test 
+X_train,X_test,y_train,y_test = train_test_split(X,y,test_size=0.2,random_state=2)
+
+#set up parameters for tunning 
+param_grid = {
+    'criterion' : ['gini', 'entropy'],
+    'max_depth' : [2,5,10],
+    'min_samples_split' : [10,50,100],
+    'min_samples_leaf' : [2,5,10],
+     'bootstrap': [False,True],
+    'n_estimators': [50, 100, 200]
+}
+
+model = GridSearchCV(estimator=RandomForestClassifier(random_state=42), 
+                              param_grid=param_grid, cv=2, scoring='f1')
+
+# Train model
+model.fit(X_train, y_train)
+```
+
+*Note: I removed is_informational from the feature since when is_bogo=0, is_discount=0, it already suggests that the offer is an informational offer. We do not need an extra column to identify informational offer. *
 
 # Results and Conclusions 
 
 ## Model Evaluation and Validation 
 
+The best set of parameters are with Bootstrap and 200 estimators. 
 
+```python
+{'bootstrap': True,
+ 'criterion': 'entropy',
+ 'max_depth': 10,
+ 'min_samples_leaf': 10,
+ 'min_samples_split': 50,
+ 'n_estimators': 200}
+```
 
+The classification report of the optimized model is as below, producing a 0.73 weighted accuracy. 
 
+```python
+            precision    recall  f1-score   support
+           0       0.70      0.62      0.66      3498
+           1       0.76      0.81      0.78      5069
+    accuracy                           0.73      8567
+   macro avg       0.73      0.72      0.72      8567
+weighted avg       0.73      0.73      0.73      8567
+```
+
+And we also identified the feature importance, ordered from most important to least important. The result suggests that, membership days is the most important variable, followed by income, the reward offers provide. Distribution channels seems to have little to none importance to the outcome (whether customers complete offers)
+
+```python
+Variable: membership_days      Importance: 0.38
+Variable: income               Importance: 0.19
+Variable: reward               Importance: 0.09
+Variable: age                  Importance: 0.08
+Variable: has_social           Importance: 0.07
+Variable: difficulty           Importance: 0.06
+Variable: is_female            Importance: 0.05
+Variable: is_bogo              Importance: 0.03
+Variable: has_mobile           Importance: 0.03
+Variable: is_discount          Importance: 0.02
+Variable: has_web              Importance: 0.01
+Variable: has_email            Importance: 0.0
+```
 
 ## Justifications 
 
-why some techniques work better than others 
+Random Forest model with bootstrapping, and other parameter tuning works better than the simplistic logistic regression model. Random Forest is a classification method that creates as many decision trees on a randomly selected subset of features, and integrate the results of all trees produced by these subsets. It reduces overfitting problem that could exist in decision trees and also reduces the variances, and improves accuracy. It is robust and can be used for both classification and regression problems. In addition, I added a hyperparameter tuning grid. It works by searching exhaustively through a specified subset of hyperparameters, and find the optimal combination of parameters. And hence, the final model has shown some improvement in accuracy, compared to the simplistic model. 
 
+## Conclusion and Reflection 
 
-
-## Reflection 
-
-problem summary, aspects interesting or difficult 
-
-
+Till now, I have successfully built a predictive model predicting whether a customer may respond to an promotional offer sent by Starbucks. The two most important predictors are how long they have been a Starbucks member, and their income. An interesting matter of fact to me, is that the offer type has little impact on whether customers respond to offers. 
 
 ## Future Improvement
 
-how could improve, future work 
+There are some known reasons that may have negatively affected the model's performance, that we can improve on with additional data: 
 
+*   Since there is 0 offer complete event for informational offers in the dataset, we faced a challenge of having no data predicting the outcome for informational offer An assumption has to be made, that when customers view and make purchase during the active period of an informational offer, we consider them complete the offer. However, this assumption can be better refined, if we know what product the informational offer is about. For example, if the informational offer is about latte, and the customer purchases a cup of Americano, we should not consider the customer as influenced by, or completed the offer. Unfortunately, targeted product of each offer, is not provided in the dataset. 
 
+*   Another deficiency in the data is the granularity of time recording. Many events can happen within an hour so a real timestamp may provide more accurate filtration of, for instance, offer views after completion or expiry times. 
 
+The dataset however, does offer some information that I haven't used yet in the model. For instance, the total purchase amounts of each customer, before receiving an offer. This will serve as a good metric for customer engagement. More work can be done to reshape the data and incorporate this variable. 
 
+**END**
 
-
-
-
-
-
-
-
-
-
-
-
+-- 
 
 
 *Header image* from [Starbucks](https://stories.starbucks.com/stories/2020/a-how-to-guide-for-digital-ordering-at-starbucks/) 
