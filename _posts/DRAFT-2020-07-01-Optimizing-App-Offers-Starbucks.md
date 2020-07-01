@@ -117,9 +117,13 @@ The final data seems to have a balanced distribution in terms of age, gender and
 
 <img src="https://github.com/tanyayt/tanyayt.github.io/blob/master/images/2020-07/transactions_raw.PNG?raw=true" width="600px"> 
 
-<img src="" title="countplot of event types"> 
+<img src="https://github.com/tanyayt/tanyayt.github.io/blob/master/images/2020-07/event_type_distribution.png?raw=true" title="countplot of event types" width="400px"> 
 
-<img src="" title= "showing outliers in purchase amount">
+We have most purchase (transaction) events recorded and least number of offer completion events. 
+
+<img src="https://github.com/tanyayt/tanyayt.github.io/blob/master/images/2020-07/boxplot_large_amount.png?raw=true" title= "showing outliers in purchase amount">
+
+It is also noticed that we have outliers in purchase amounts. 
 
 *Cleaning Steps*
 
@@ -130,7 +134,7 @@ The final data seems to have a balanced distribution in terms of age, gender and
 
     *   Replace `value` column with purchase amount for purchase events
 *   Renamed `person` to customer_id, so it causes less confusion when joing labels later; renamed `time` to receive_time, purchase_time, and complete_time in each case of offer-receiving, offer-completing, and purchase events 
-*   Removed outliers in purchase amounts
+*   Removed outliers in purchase amounts. I used +/- 1.5 IQR range as the cutoff point and removed the outliers in purchase events
 
 *After Cleaning*
 
@@ -138,24 +142,47 @@ The final data seems to have a balanced distribution in terms of age, gender and
 
     <img src="https://github.com/tanyayt/tanyayt.github.io/blob/master/images/2020-07/df_receive_events.PNG?raw=true" title="df_receive_events" width="500px"> 
 
+    We also notice that one customer can receive as many as 6 offers (shown below). And one customer can receive the same offer multiple times. We therefore have to use receive_time, along with customer_id, offer_id as unique identifiers. 
+
+    <img src="https://github.com/tanyayt/tanyayt.github.io/blob/master/images/2020-07/num_offers_per_customer.png?raw=true" width="400px">
+
 *   `df_view_events`: dataframe containing events when offers are viewed 
 
-    <img src="" title="df_view_events"> 
+    <img src="https://github.com/tanyayt/tanyayt.github.io/blob/master/images/2020-07/df_view_events_clean.PNG?raw=true" title="df_view_events" width=500px> 
 
-    <img scr="" title ="customers can have multiple views"> 
+    <img src="" title ="customers can have multiple views"> 
 
-    <img scr="" title ="customers can view the same offer multiple times"> 
+    Since customers can have received multiple offers, it is expected they have multiple view events. For one offer_id, customers could have viewed them for more than once. 
+
+    <img src="https://github.com/tanyayt/tanyayt.github.io/blob/master/images/2020-07/multiple_view_each_offer.png?raw=true" title ="customers can view the same offer multiple times" width="400px"> 
 
 *   `df_complete_events` : dataframe containing events when offers are completed 
 
-    <img src="" title="df_complete_events"> 
+    Customers can receive and complete one offer multiple times so we will use complete time later to filter out complete events that happened after the expiry time of offers. The complete events dataframe looks like this: 
 
-    <img src=" " title ="customers can complete the same offer id multiple times"
+    <img src="https://github.com/tanyayt/tanyayt.github.io/blob/master/images/2020-07/df_complete_events_clean.png?raw=true" title="df_complete_events" width=600> 
 
-*   `df_purchase_events` : dataframe containing events when customers make purchases 
+    
 
-    <img src="" title="df_purchase_events"> 
+*   `df_purchase_events` : dataframe containing events when customers make purchases. With the codes below, I have removed the odd purchase amounts outside the 1.5IQR range
 
+    ```python
+purchase_events_clean = purchase_events # initialize the clean dataset 
+    # calculate IQR scores
+    Q1 = purchase_events.amount.quantile(0.25)
+    Q3 = purchase_events.amount.quantile(0.75)
+    IQR = Q3 - Q1
+               
+    # remove outliners
+    purchase_events_clean = purchase_events[(purchase_events.amount> Q1-1.5*IQR) & (purchase_events.amount < Q3+1.5*IQR)]
+    ```
+    
+    <img src="https://github.com/tanyayt/tanyayt.github.io/blob/master/images/2020-07/boxplot_purchase_amount_clean.png?raw=true" title="after removing purchase amt outliers" width=400px> 
+    
+    The clean purchase events data looks like this 
+    
+    <img src="https://github.com/tanyayt/tanyayt.github.io/blob/master/images/2020-07/clean_purchase_events.PNG?raw=true" title="df_purchase_events"> 
+    
     
 ## Data Pre-Processing
 
