@@ -171,7 +171,6 @@ purchase_events_clean = purchase_events # initialize the clean dataset
     purchase_events_clean = purchase_events[(purchase_events.amount> Q1-1.5*IQR) & (purchase_events.amount < Q3+1.5*IQR)]
 ```
 
-
 <img src="https://github.com/tanyayt/tanyayt.github.io/blob/master/images/2020-07/boxplot_purchase_amount_clean.png?raw=true" title="after removing purchase amt outliers" width="400px"> 
     
 
@@ -219,7 +218,7 @@ df_receive_view_customers_offers['expiry_time']=df_receive_view_customers_offers
                                               +df_receive_view_customers_offers['duration_hours']
 
 #filter out views that are outside the receive and expiry time
-df_receive_view_customers_offers_clean = df_receive_view_customers_offers.drop(                                   df_receive_view_customers_offers[(df_receive_view_customers_offers.view_time <= df_receive_view_customers_offers.receive_time) | (df_receive_view_customers_offers.view_time >= df_receive_view_customers_offers.expiry_time)]
+df_receive_view_customers_offers_clean = df_receive_view_customers_offers.drop(df_receive_view_customers_offers[(df_receive_view_customers_offers.view_time <= df_receive_view_customers_offers.receive_time) | (df_receive_view_customers_offers.view_time >= df_receive_view_customers_offers.expiry_time)]
                                          .index,axis=0)
 ```
 
@@ -241,7 +240,7 @@ To create a unique identifier using: customer_id, offer_id, and receive_time, I 
 
 The process is rather complex so please visit my [Python Notebook](https://github.com/tanyayt/udacity_data_scientist/blob/master/starbucks_optimizing_app_offers/Starbucks_Capstone_notebook.ipynb) to see how NaNs are handled in GroupBy calculations.The end result is that we have 1 and only 1 row in the dataframe df_combined, with each combination of customer_id, offer_id, and receive_time
 
-<img src="https://github.com/tanyayt/tanyayt.github.io/blob/master/images/2020-07/df_combined_unique.PNG?raw=true" title="unique df_combined" width=600> 
+<img src="https://github.com/tanyayt/tanyayt.github.io/blob/master/images/2020-07/df_combined_unique.PNG?raw=true" title="unique df_combined" width="600px"> 
 
 ### Left Join with Purchase Events and Filter 
 
