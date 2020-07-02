@@ -78,13 +78,13 @@ After processing, the channel column is now replaced by 3 dummy-coded columns `h
 
 *   We also see that most members signed up for membership in recent years. 
 
-    <img src="https://github.com/tanyayt/tanyayt.github.io/blob/master/images/2020-07/membership_years.png?raw=true" width="400px"> 
+<img src="https://github.com/tanyayt/tanyayt.github.io/blob/master/images/2020-07/membership_years.png?raw=true" width="400px"> 
 
 *   There are more male users (about 57%) in the dataset
 
-    <img src="https://github.com/tanyayt/tanyayt.github.io/blob/master/images/2020-07/gender_distribution.png?raw=true" width="400px">
+<img src="https://github.com/tanyayt/tanyayt.github.io/blob/master/images/2020-07/gender_distribution.png?raw=true" width="400px">
 
-    
+​    
 
 *Cleaning Steps*
 
@@ -136,11 +136,11 @@ It is also noticed that we have outliers in purchase amounts.
 
 *   `df_receive_events`: dataframe containing events when offers are received 
 
-    <img src="https://github.com/tanyayt/tanyayt.github.io/blob/master/images/2020-07/df_receive_events.PNG?raw=true" title="df_receive_events" width="500px"> 
+<img src="https://github.com/tanyayt/tanyayt.github.io/blob/master/images/2020-07/df_receive_events.PNG?raw=true" title="df_receive_events" width="500px"> 
 
-    We also notice that one customer can receive as many as 6 offers (shown below). And one customer can receive the same offer multiple times. We therefore have to use receive_time, along with customer_id, offer_id as unique identifiers. 
+We also notice that one customer can receive as many as 6 offers (shown below). And one customer can receive the same offer multiple times. We therefore have to use receive_time, along with customer_id, offer_id as unique identifiers. 
 
-    <img src="https://github.com/tanyayt/tanyayt.github.io/blob/master/images/2020-07/num_offers_per_customer.png?raw=true" width="400px">
+<img src="https://github.com/tanyayt/tanyayt.github.io/blob/master/images/2020-07/num_offers_per_customer.png?raw=true" width="400px">
 
 *   `df_view_events`: dataframe containing events when offers are viewed 
 
@@ -154,9 +154,9 @@ Since customers can have received multiple offers, it is expected they have mult
 
     Customers can receive and complete one offer multiple times so we will use complete time later to filter out complete events that happened after the expiry time of offers. The complete events dataframe looks like this: 
 
-    <img src="https://github.com/tanyayt/tanyayt.github.io/blob/master/images/2020-07/df_complete_events_clean.png?raw=true" title="df_complete_events" width=600> 
+<img src="https://github.com/tanyayt/tanyayt.github.io/blob/master/images/2020-07/df_complete_events_clean.png?raw=true" title="df_complete_events" width=600> 
 
-    
+​    
 
 *   `df_purchase_events` : dataframe containing events when customers make purchases. With the codes below, I have removed the odd purchase amounts outside the 1.5IQR range
 
@@ -171,11 +171,13 @@ purchase_events_clean = purchase_events # initialize the clean dataset
     purchase_events_clean = purchase_events[(purchase_events.amount> Q1-1.5*IQR) & (purchase_events.amount < Q3+1.5*IQR)]
     ```
     
-    <img src="https://github.com/tanyayt/tanyayt.github.io/blob/master/images/2020-07/boxplot_purchase_amount_clean.png?raw=true" title="after removing purchase amt outliers" width=400px> 
+
+<img src="https://github.com/tanyayt/tanyayt.github.io/blob/master/images/2020-07/boxplot_purchase_amount_clean.png?raw=true" title="after removing purchase amt outliers" width="400px"> 
     
+
     The clean purchase events data looks like this 
-    
-    <img src="https://github.com/tanyayt/tanyayt.github.io/blob/master/images/2020-07/clean_purchase_events.PNG?raw=true" title="df_purchase_events"> 
+
+<img src="https://github.com/tanyayt/tanyayt.github.io/blob/master/images/2020-07/clean_purchase_events.PNG?raw=true" title="df_purchase_events"> 
     
     
 ## Data Pre-Processing
