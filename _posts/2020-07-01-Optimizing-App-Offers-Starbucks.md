@@ -156,7 +156,7 @@ Since customers can have received multiple offers, it is expected they have mult
 
 Customers can receive and complete one offer multiple times so we will use complete time later to filter out complete events that happened after the expiry time of offers. The complete events dataframe looks like this: 
 
-<img src="https://github.com/tanyayt/tanyayt.github.io/blob/master/images/2020-07/df_complete_events_clean.png?raw=true" title="df_complete_events" width=600> 
+<img src="https://github.com/tanyayt/tanyayt.github.io/blob/master/images/2020-07/df_complete_events_clean.png?raw=true" title="df_complete_events" width="600px"> 
 
 `df_purchase_events` : dataframe containing events when customers make purchases. With the codes below, I have removed the odd purchase amounts outside the 1.5IQR range
 
