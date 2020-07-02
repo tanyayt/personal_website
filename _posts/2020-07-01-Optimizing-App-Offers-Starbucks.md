@@ -160,7 +160,7 @@ Since customers can have received multiple offers, it is expected they have mult
 
 *   `df_purchase_events` : dataframe containing events when customers make purchases. With the codes below, I have removed the odd purchase amounts outside the 1.5IQR range
 
-    ```python
+```python
 purchase_events_clean = purchase_events # initialize the clean dataset 
     # calculate IQR scores
     Q1 = purchase_events.amount.quantile(0.25)
@@ -169,17 +169,17 @@ purchase_events_clean = purchase_events # initialize the clean dataset
                
     # remove outliners
     purchase_events_clean = purchase_events[(purchase_events.amount> Q1-1.5*IQR) & (purchase_events.amount < Q3+1.5*IQR)]
-    ```
-    
+```
+
 
 <img src="https://github.com/tanyayt/tanyayt.github.io/blob/master/images/2020-07/boxplot_purchase_amount_clean.png?raw=true" title="after removing purchase amt outliers" width="400px"> 
     
 
-    The clean purchase events data looks like this 
+The clean purchase events data looks like this 
 
 <img src="https://github.com/tanyayt/tanyayt.github.io/blob/master/images/2020-07/clean_purchase_events.PNG?raw=true" title="df_purchase_events"> 
-    
-    
+        
+
 ## Data Pre-Processing
 
 This section outlines how I combined customers' data (df_customers), offers data (df_offers), offer-receiving event data (df_receive_events), offer viewing data(df_view_events), offer completion data (df_complete_events), and purchase event data (df_purchase_events) together, and filter out duplicated rows resulted from multiple receiving,viewing, and purchase events. 
