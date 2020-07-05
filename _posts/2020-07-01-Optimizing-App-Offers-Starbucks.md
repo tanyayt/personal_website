@@ -25,7 +25,7 @@ The metrics I used in this project is weighted accuracy of the Random Forest Cla
 
 # Analysis 
 
-This section outlines the key steps included in data exploration, cleaning, pre-processing, model implementation and refinement. Selected visualizations are included. For more information, please visit my [repository on Github](https://github.com/tanyayt/udacity_data_scientist/tree/master/starbucks_optimizing_app_offers)
+This section outlines the key steps included in data exploration, cleaning, pre-processing, model implementation and refinement. Selected visualizations are included. For more information, please visit my [repository on Github](https://github.com/tanyayt/starbucks_optimizing_app_offers)
 
 ## Data Exploration and Cleaning
 
@@ -238,7 +238,7 @@ df_combined = df_combined.drop(df_combined[(df_combined.complete_time <= df_comb
 
 To create a unique identifier using: customer_id, offer_id, and receive_time, I then aggregate the rows, by consolidating the rows associated with multiple view or multiple completion events of the same offer, received at the same time. 
 
-The process is rather complex so please visit my [Python Notebook](https://github.com/tanyayt/udacity_data_scientist/blob/master/starbucks_optimizing_app_offers/Starbucks_Capstone_notebook.ipynb) to see how NaNs are handled in GroupBy calculations.The end result is that we have 1 and only 1 row in the dataframe df_combined, with each combination of customer_id, offer_id, and receive_time
+The process is rather complex so please visit the [Python Notebook](https://github.com/tanyayt/starbucks_optimizing_app_offers/blob/master/Starbucks_Capstone_notebook.ipynb) on Github to see how NaNs are handled in GroupBy calculations.The end result is that we have 1 and only 1 row in the dataframe df_combined, with each combination of customer_id, offer_id, and receive_time
 
 <img src="https://github.com/tanyayt/tanyayt.github.io/blob/master/images/2020-07/df_combined_unique.PNG?raw=true" title="unique df_combined" width="600px"> 
 
