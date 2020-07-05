@@ -20,9 +20,9 @@ Availability is defined as the % of listings available. Availability reaches its
 
 Finally, let's see how availability changes throughout the week. Friday and Saturday have the lowest availabilities and the smallest numbers of available units. Monday and Tuesday are most available, in terms of availability and total available units respectively. 
 
-<img src="https://github.com/tanyayt/udacity_data_scientist/blob/master/boston_airbnb_analysis/availability_weekly.png?raw=true" style="width: 500px;"/>
+<img src="https://github.com/tanyayt/boston_airbnb_analysis/blob/master/availability_weekly.png?raw=true" style="width: 500px;"/>
 
-<img src="https://github.com/tanyayt/udacity_data_scientist/blob/master/boston_airbnb_analysis/available_count_weekly.png?raw=true" width="500px">
+<img src="https://github.com/tanyayt/boston_airbnb_analysis/blob/master/available_count_weekly.png?raw=true" width="500px">
 
 
 
@@ -45,7 +45,7 @@ We performed a multiple linear regression to predict nightly rental rate, using 
 
 The result is satisfactory with an R squared value of 0.637 in training data and score of 0.596 on test data. The prediction deviates from the actual rate in high pricing range. 
 
-<img src="https://github.com/tanyayt/udacity_data_scientist/blob/master/boston_airbnb_analysis/predicted_rate_vs_actual_rate.png?raw=true" width="500px"> 
+<img src="https://github.com/tanyayt/boston_airbnb_analysis//blob/master/predicted_rate_vs_actual_rate.png?raw=true" width="500px"> 
 
 # Conclusion 
 
