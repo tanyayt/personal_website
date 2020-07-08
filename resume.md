@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Resume
-permalink: /resume-draft/
+permalink: /resume/
 ---
 > **Contact**:   [tanya.yt.tan@gmail.com](mailto: tanya.yt.tan@gmail.com) | [857-452-4321](tel:8574524321) | [Blog](https://tanyayt.github.io/) | [Linkedin]( https://www.linkedin.com/in/tanyatan/ ) | [GitHub](https://github.com/tanyayt) | [Tableau Public](https://public.tableau.com/profile/tanyayt) 
 # Tanya Tan, Data Analyst
@@ -39,9 +39,10 @@ Transitioning to data science; supporting data-driven business strategies in hig
 *   Successfully initiated and completed several technology integration projects
 
 ## Education & Certifications
-- Udacity Data Scientist Nanodegree (2020) 
-- Udacity Python for Data Science Nanodegree (2020)
-- Tableau Analyst Certificate (2020)
+- Data Scientist Nanodegree, Udacity (2020) 
+- Python for Data Science Nanodegree, Udacity (2020)
+- Tableau Analyst Certificate, Tableau (2020)
+- Data Science Foundations using R, Coursera  (2020)
 - M.Sc. in Chemistry, University of British Columbia, Vancouver, BC, Canada
 - B.Sc. in Chemistry, Peking University, China
 
