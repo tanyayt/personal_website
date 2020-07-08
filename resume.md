@@ -46,7 +46,7 @@ Transitioning to data science; supporting data-driven business strategies in hig
 - M.Sc. in Chemistry, University of British Columbia, Vancouver, BC, Canada
 - B.Sc. in Chemistry, Peking University, China
 
-## S Projects
+## Selected Projects
 **Optimizing Starbucks App Offers with Machine Learning Algorithms (2020)**  | [GitHub Repository](https://github.com/tanyayt/starbucks_optimizing_app_offers) | [Blog Post](https://tanyayt.github.io/Optimizing-App-Offers-Starbucks/)
 
 - Building a random forest model that predicts customers' response to App offers with 73% accuracy. 
