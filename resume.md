@@ -91,4 +91,4 @@ Transitioning to data science; supporting data-driven business strategies in hig
 
 [1] **Tan, Y.**, Konorov, S. O., Schulze, H. G., Piret, J. M., Blades, M. W., & Turner, R. F. (2012). *Comparative study using Raman microspectroscopy reveals spectral signatures of human induced pluripotent cells more closely resemble those from human embryonic stem cells than those from differentiated cells*. Analyst, 137(19), 4509-4515.
 
-Download [PDF]({{ site.baseurl }}/images/doc/LINK-TO-BE-ADDED)
+Download [PDF]({{ site.baseurl }}/images/doc/TanyaTan-Resume-2020.pdf)
