@@ -18,7 +18,8 @@ Supporting data-driven business strategies in higher education and educational t
 ## Work Experience
 
 **Research Analyst, Institutional Research**
-*Langara College, Vancouver, Canada  \|  from Dec 2018 to Present*
+
+*Langara College*, Vancouver, Canada  \|  from Dec 2018 to Present
 
 - Develop interactive Tableau dashboards and reports to support senior management's strategic planning
 - Build efficient and reproducible analytics workflows using Tableau, R, Excel, and MS Access
@@ -28,7 +29,8 @@ Supporting data-driven business strategies in higher education and educational t
 - Coordinate user management on Tableau Online and monitor site traffic patterns. With our team's effort, we have seen a 5+ times higher weekly traffic to Tableau Online site in 2020Q1 compared to 2019.
 
 **Education Specialist, Chemistry**
-*University of British Columbia, Vancouver, Canada \| from May 2017 to Dec 2018*
+
+*University of British Columbia*, Vancouver, Canada \| from May 2017 to Dec 2018
 
 - Led the instructional design, research and evaluation components of an educational technology project (funded amount $226K+) with substantial expansion from implementing in a single course pilot to ~3000 students in 7 large-enrollment courses
 - Provided consultation service to instructors on best practices of integrating the online learning tool (Alchemy)
@@ -54,15 +56,15 @@ Supporting data-driven business strategies in higher education and educational t
 
 ## Selected Projects
 
-**Optimizing Starbucks App Offers with Machine Learning Algorithms (2020)**  | [GitHub Repository](https://github.com/tanyayt/starbucks_optimizing_app_offers) | [Blog Post](https://tanyayt.github.io/Optimizing-App-Offers-Starbucks/)
+**Optimizing Starbucks App Offers with Machine Learning Algorithms (2020)**  \| [GitHub Repository](https://github.com/tanyayt/starbucks_optimizing_app_offers) \| [Blog Post](https://tanyayt.github.io/Optimizing-App-Offers-Starbucks/)
 
 - Building a random forest model that predicts customers' response to App offers with 73% accuracy.
 
-**Boston Airbnb Rental Data Analysis (2020)** | [Github Repository](https://github.com/tanyayt/boston_airbnb_analysis) | [Blog Post](https://tanyayt.github.io/Boston-airbnb-market/)
+**Boston Airbnb Rental Data Analysis (2020)** \| [Github Repository](https://github.com/tanyayt/boston_airbnb_analysis) \| [Blog Post](https://tanyayt.github.io/Boston-airbnb-market/)
 
 - Visualizing geographical and seasonal trends in pricing and availability of Airbnb Rentals in Boston area.
 
-**Online Teaching Preparedness Dashboard (2020)** |[Tableau Public](https://public.tableau.com/views/OnlineTeachingPreparednessDashboard/OnlineTeachingPreparednessDashboard?:language=en&:display_count=y&:origin=viz_share_link )
+**Online Teaching Preparedness Dashboard (2020)** \|[Tableau Public](https://public.tableau.com/views/OnlineTeachingPreparednessDashboard/OnlineTeachingPreparednessDashboard?:language=en&:display_count=y&:origin=viz_share_link )
 
 - Presenting a bird's-eye view of online teaching integration and assessing the impact of quick online transition
 
@@ -78,7 +80,7 @@ Supporting data-driven business strategies in higher education and educational t
 
 * Customized Tableau dashboard to allow stakeholders to track student transfers within B.C post-secondary systems thus to provide important insights in program planning and marketing strategies.
 
-**Data-Enabled Pedagogy and Technology for Critical Thinking and Decision Making Skills (2018)** | [Poster](https://tlef2.sites.olt.ubc.ca/files/2018/05/SCI_Walter_Algar.png)
+**Data-Enabled Pedagogy and Technology for Critical Thinking and Decision Making Skills (2018)** \| [Poster](https://tlef2.sites.olt.ubc.ca/files/2018/05/SCI_Walter_Algar.png)
 
 *  Our team developed a pedagogical method and online tool, code-named [Alchemy](https://alchemy.elearning.ubc.ca/#/login), that helps students improve their critical-thinking and decision-making skills.
 
