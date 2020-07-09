@@ -4,7 +4,7 @@ title: Resume
 permalink: /resume/
 ---
 
-> **Contact**:   [tanya.yt.tan@gmail.com](mailto: tanya.yt.tan@gmail.com) |  [857-452-4321](tel:8574524321)  |  [Blog](https://tanyayt.github.io/)  |  [Linkedin]( https://www.linkedin.com/in/tanyatan/ )  |  [GitHub](https://github.com/tanyayt) |  [Tableau Public](https://public.tableau.com/profile/tanyayt) 
+> **Contact**:   [tanya.yt.tan@gmail.com](mailto: tanya.yt.tan@gmail.com) \| [857-452-4321](tel:8574524321)  \|  [Blog](https://tanyayt.github.io/)  \|  [Linkedin]( https://www.linkedin.com/in/tanyatan/ )  \|  [GitHub](https://github.com/tanyayt) \|  [Tableau Public](https://public.tableau.com/profile/tanyayt)
 
 # Tanya Tan, Data Analyst
 
@@ -93,4 +93,3 @@ Supporting data-driven business strategies in higher education and educational t
 [1] **Tan, Y.**, Konorov, S. O., Schulze, H. G., Piret, J. M., Blades, M. W., & Turner, R. F. Comparative study using Raman microspectroscopy reveals spectral signatures of human induced pluripotent cells more closely resemble those from human embryonic stem cells than those from differentiated cells. *Analyst*, **137(19)**, 4509-4515 (2012)
 
 [*Download PDF*]({{ site.baseurl }}/images/doc/TanyaTan-Resume-2020.pdf)
-
