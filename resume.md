@@ -40,7 +40,7 @@ Supporting data-driven business strategies in higher education and educational t
 
 **Chemistry Lab Instructor** \| *Kwantlen Polytechnic University, Surrey, Canada  \| from  Aug  2016 to Apr 2017*
 
-**Teaching Lab Specialist** \| *University of Illinois, Springfield, IL \| from Oct  2013 to Jun 2016*
+**Teaching Lab Specialist** \| *University of Illinois*, Springfield, IL \| from Oct  2013 to Jun 2016
 
 *   Designed and led learning activities in 6 weekly lab sections
 *   Successfully initiated and completed several technology integration projects
