@@ -3,7 +3,8 @@ layout: default
 title: Resume
 permalink: /resume/
 ---
-> **Contact**:   [tanya.yt.tan@gmail.com](mailto: tanya.yt.tan@gmail.com) | [857-452-4321](tel:8574524321) | [Blog](https://tanyayt.github.io/) | [Linkedin]( https://www.linkedin.com/in/tanyatan/ ) | [GitHub](https://github.com/tanyayt) | [Tableau Public](https://public.tableau.com/profile/tanyayt) 
+
+> **Contact**:   [tanya.yt.tan@gmail.com](mailto: tanya.yt.tan@gmail.com) |  [857-452-4321](tel:8574524321)  |  [Blog](https://tanyayt.github.io/)  |  [Linkedin]( https://www.linkedin.com/in/tanyatan/ )  |  [GitHub](https://github.com/tanyayt) |  [Tableau Public](https://public.tableau.com/profile/tanyayt) 
 
 # Tanya Tan, Data Analyst
 
