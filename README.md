@@ -5,8 +5,13 @@
 *Content*
 
   - ~~by 2020-05-30: complete monthly post for May~~
+
   - ~~by 2020-05-20: complete post re: udacity experience~~ 
-  - by 2020-06-07: revise Tableau resume to add Coursera, Udacity and Codecademy ; add mobile version for resume and markdown version 
+
+  - 2020-07 Restructure: 
+- Nav bar: Resume, Project/Blog
+
+* 2020-07 
 
 *Website Feature* 
 
