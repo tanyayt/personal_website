@@ -8,10 +8,9 @@
 
   - ~~by 2020-05-20: complete post re: udacity experience~~ 
 
-  - 2020-07 Restructure: 
-- Nav bar: Resume, Project/Blog
+  - ~~2020-07 Restructure ~~Nav bar: Resume, Project/Blog~~
 
-* 2020-07 
+* 2020-07-: add review for Udacity Program
 
 *Website Feature* 
 
