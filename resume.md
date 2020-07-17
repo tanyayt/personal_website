@@ -8,7 +8,7 @@ permalink: /resume/
 
 # Tanya Tan, Data Analyst
 
-Supporting data-driven business strategies in higher education and educational technology industry
+Enabling data-driven business solutions in higher education and educational technology industries
 
 ### Skills
 
