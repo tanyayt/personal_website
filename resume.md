@@ -4,11 +4,11 @@ title: Resume
 permalink: /resume/
 ---
 
-> **Contact**:   [tanya.yt.tan@gmail.com](mailto: tanya.yt.tan@gmail.com) \| [857-452-4321](tel:8574524321)  \|  [Blog](https://tanyayt.github.io/)  \|  [Linkedin]( https://www.linkedin.com/in/tanyatan/ )  \|  [GitHub](https://github.com/tanyayt) \|  [Tableau Public](https://public.tableau.com/profile/tanyayt)
+> **Contact**:   [tanya.yt.tan@gmail.com](mailto:tanya.yt.tan@gmail.com) \| [857-452-4321](tel:8574524321)  \|  [Blog](https://tanyayt.github.io/)  \|  [Linkedin]( https://www.linkedin.com/in/tanyatan/ )  \|  [GitHub](https://github.com/tanyayt) \|  [Tableau Public](https://public.tableau.com/profile/tanyayt)
 
 # Tanya Tan, Data Analyst
 
-Supporting data-driven business strategies in higher education and educational technology industry
+Enabling data-driven business solutions in higher education and educational technology industries
 
 ### Skills
 
@@ -24,7 +24,7 @@ Supporting data-driven business strategies in higher education and educational t
 - Develop interactive Tableau dashboards and reports to support senior management's strategic planning
 - Build efficient and reproducible analytics workflows using Tableau, R, Excel, and MS Access
 - Manage regular reports of student applications, enrollment, academic outcome and workload
-- Conduct complex analyses to inform recruitment and marketing strategies and course planning
+- Conduct statistical analyses to inform course planning, recruitment and marketing strategies
 - Analyze surveys related to program reviews and other college-wide initiatives
 - Coordinate user management on Tableau Online and monitor site traffic patterns. With our team's effort, we have seen a 5+ times higher weekly traffic to Tableau Online site in 2020Q1 compared to 2019.
 
@@ -74,7 +74,7 @@ Supporting data-driven business strategies in higher education and educational t
 
 **International Student Course Section Allocation Model (2019)**
 
-- A What-if Tableau dashboard that factors in enrollment pattern and tuition revenue, user-defined enrollment requirements, to predict international student enrolment and model course section needs.
+- A what-if Tableau dashboard that factors in enrollment pattern and tuition revenue, user-defined enrollment requirements, to predict international student enrolment and model course section needs.
 
 **Student Mobility Dashboard (2019)**
 
