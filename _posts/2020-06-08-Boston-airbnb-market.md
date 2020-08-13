@@ -12,11 +12,11 @@ Airbnb has transformed travel and the vacation rental industry in numerous ways.
 
 ## How does the availability change throughout the year? 
 
-<img src="https://github.com/tanyayt/udacity_data_scientist/blob/master/boston_airbnb_analysis/availability_trend_daily.png?raw=true" style="width: 900px;"/>
+<img src="https://github.com/tanyayt/boston_airbnb_analysis/blob/master/availability_trend_daily.png?raw=true" style="width: 900px;"/>
 
 Availability is defined as the % of listings available. Availability reaches its highest point in early December 2016, and its lowest point in mid-September 2016. The total available listings follow a similar trend. 
 
-<img src="https://github.com/tanyayt/udacity_data_scientist/blob/master/boston_airbnb_analysis/available_counts_trend_daily.png?raw=true" style="width: 900px;"/>
+<img src="https://github.com/tanyayt/boston_airbnb_analysis/blob/master/available_counts_trend_daily.png?raw=true" style="width: 900px;"/>
 
 Finally, let's see how availability changes throughout the week. Friday and Saturday have the lowest availabilities and the smallest numbers of available units. Monday and Tuesday are most available, in terms of availability and total available units respectively. 
 
@@ -30,7 +30,7 @@ Finally, let's see how availability changes throughout the week. Friday and Satu
 
 Entire home/apartment rental (blue bars) is most expensive in South Boston Waterfront and least expensive in Mattapan. Private room (orange bars) is most expensive in downtown and least expensive in Hyde Park. Not every neighbourhood has shared rooms for rental but South End still sees the highest rate for this room type. 
 
-<img src="https://github.com/tanyayt/udacity_data_scientist/blob/master/boston_airbnb_analysis/average_price_by_neighbourhood_room_type.png?raw=true" width="800px">
+<img src="https://github.com/tanyayt/boston_airbnb_analysis/blob/master/average_price_by_neighbourhood_room_type.png?raw=true" width="800px">
 
 # Can room type,numbers of bedrooms and bathrooms, neighborhood and review ratings predict rental rate? 
 
