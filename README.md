@@ -11,8 +11,7 @@
   - ~~2020-07 Restructure ~~Nav bar: Resume, Project/Blog~~
 
 * 2020-07-: add review for Udacity Program
-
-*Website Feature* 
+* 2020-11: edit resume update 
 
 # About 
 This repository contains all the files used to build my [GitPage](https://tanyayt.github.io/) following the instructions: [**Build A Blog With Jekyll And GitHub Pages**](http://www.smashingmagazine.com/2014/08/01/build-blog-jekyll-github-pages/). 
