@@ -19,13 +19,13 @@ avatar: https://raw.githubusercontent.com/tanyayt/tanyayt.github.io/master/image
 # Includes an icon in the footer for each username you enter
 footer-links:
   dribbble:
-  linkedin: https://www.linkedin.com/in/tanyatan/
+  linkedin: /tanyatan/
   email: tanya.yt.tan@gmail.com
   github: /tanyayt/
   #rss: # just type anything here for a working RSS icon
   #stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   #youtube: # channel/<your_long_string> or user/<user-name>
-  
+
 
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
