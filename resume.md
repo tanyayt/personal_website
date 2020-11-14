@@ -38,9 +38,6 @@ Enabling data-driven business solutions in higher education and educational tech
 
 **Teaching Lab Specialist** \| *University of Illinois*, Springfield, IL \| from Oct  2013 to Jun 2016
 
-*   Designed and led learning activities in 6 weekly lab sections
-*   Successfully initiated and completed several technology integration projects
-
 ## Education & Certifications
 
 - Data Scientist Nanodegree, Udacity (2020)
