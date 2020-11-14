@@ -16,25 +16,21 @@ Enabling data-driven business solutions in higher education and educational tech
 - Non-technical: teamwork, project management, adaptability, self-directed learning
 
 ## Work Experience
+**Analyst, Sales Operations**
+*[Cengage Learning](https://www.cengage.com)*, Boston, MA \| Present
+
 
 **Research Analyst, Institutional Research**
 
-*Langara College*, Vancouver, Canada  \|  from Dec 2018 to Present
+*Langara College*, Vancouver, Canada  \|  from Dec 2018 to Oct 2020
 
 - Develop interactive Tableau dashboards and reports to support senior management's strategic planning
 - Build efficient and reproducible analytics workflows using Tableau, R, Excel, and MS Access
 - Manage regular reports of student applications, enrollment, academic outcome and workload
 - Conduct statistical analyses to inform course planning, recruitment and marketing strategies
 - Analyze surveys related to program reviews and other college-wide initiatives
-- Coordinate user management on Tableau Online and monitor site traffic patterns. With our team's effort, we have seen a 5+ times higher weekly traffic to Tableau Online site in 2020Q1 compared to 2019.
 
-**Education Specialist, Chemistry**
-
-*University of British Columbia*, Vancouver, Canada \| from May 2017 to Dec 2018
-
-- Led the instructional design, research and evaluation components of an educational technology project (funded amount $226K+) with substantial expansion from implementing in a single course pilot to ~3000 students in 7 large-enrollment courses
-- Provided consultation service to instructors on best practices of integrating the online learning tool (Alchemy)
-- Conducted use-case testing, ad hoc analysis and survey research (using Qualtrics) to optimize the e-learning tool
+**Education Specialist, Chemistry** \| *University of British Columbia*, Vancouver, Canada \| from May 2017 to Dec 2018
 
 **Education Research Assistant** \| *Simon Frasor University, Burnaby, Canada  \|  from Sep 2016 to Aug 2018*
 
