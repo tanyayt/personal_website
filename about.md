@@ -3,9 +3,9 @@ layout: page
 title: About
 permalink: /about/
 ---
-I am a data analyst and education researcher. I currently work as a Research Analyst at [Langara College](https://langara.ca/) in [Vancouver, Canada](https://goo.gl/maps/emyJHZGbRyCrxjSJ7). 
+I am an aspiring data scientist currently working on Sales Analytics at [Cengage Learning](https://www.cengage.com/) in Boston MA. My focus now is to improve the effectiveness of sales processes with data-driven insights, and ultimately provide more affordable education products to students, instructors and post-secondary institutions. 
 
-I am passionate about improving organizational effectiveness with data-driven insights. I began my career as a science instructor, an educational technology specialist, and now a data analyst in institutional research of higher education. I am looking for opportunities to promote and lead a data-driven culture in higher education and online learning industries.
+Throughout my career, I have been a teacher, a researcher, a data magician, and for the most part, a lifelong learner.  I am looking for opportunities to further expand my skillset in data science in SaaS industry. 
 
 [Resume](https://tanyayt.github.io/resume/)
 
