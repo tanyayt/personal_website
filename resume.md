@@ -79,6 +79,8 @@ Enabling data-driven business solutions in higher education and educational tech
 
 ## Publications
 
+[5] **Tan, T**, Barker, M., Supporting student learning and experiences in the lab: (how) should we design their groups? *Biochemistry and Molecular Biology Education* (under review)
+
 [4] **Tan, T.Y.**, Jain, M., Obaid, T. *et al.* [What can completion time of quizzes tell us about students’ motivations and learning strategies?](https://doi.org/10.1007/s12528-019-09239-6). *Journal of Computing in High Education* **32**,389–405 (2020).
 
 [3] **Tan, T.,** Bains, O., Barley E., Sharp J.C., Barker, M. Can we influence student success in group work? The impact of lab group composition on student outcomes, presented at *Society for the Advancement of Biology Education Research Annual Meeting* (2019)
