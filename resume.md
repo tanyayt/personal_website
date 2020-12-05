@@ -8,7 +8,7 @@ permalink: /resume/
 
 # Tanya Tan, Data Analyst
 
-Enabling data-driven business solutions in higher education and educational technology industries
+Improving sales effectiveness through decision intelligence, process optimization, and partnership 
 
 ### Skills
 
@@ -16,19 +16,9 @@ Enabling data-driven business solutions in higher education and educational tech
 - Non-technical: teamwork, project management, adaptability, self-directed learning
 
 ## Work Experience
-**Analyst, Sales Operations**
-*[Cengage Learning](https://www.cengage.com)*, Boston, MA \| Present
+**Analyst, Sales Operations** | *[Cengage Learning](https://www.cengage.com)*, Boston, MA \| Present
 
-
-**Research Analyst, Institutional Research**
-
-*Langara College*, Vancouver, Canada  \|  from Dec 2018 to Oct 2020
-
-- Develop interactive Tableau dashboards and reports to support senior management's strategic planning
-- Build efficient and reproducible analytics workflows using Tableau, R, Excel, and MS Access
-- Manage regular reports of student applications, enrollment, academic outcome and workload
-- Conduct statistical analyses to inform course planning, recruitment and marketing strategies
-- Analyze surveys related to program reviews and other college-wide initiatives
+**Research Analyst, Institutional Research** | *Langara College*, Vancouver, Canada  \|  from Dec 2018 to Oct 2020
 
 **Education Specialist, Chemistry** \| *University of British Columbia*, Vancouver, Canada \| from May 2017 to Dec 2018
 
