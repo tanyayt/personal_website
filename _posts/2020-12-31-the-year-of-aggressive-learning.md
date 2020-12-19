@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "The Year of Learning"
+title:  "The Year of Aggressive Learning"
 tags: update
 ---
 
