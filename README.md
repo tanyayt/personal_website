@@ -5,9 +5,9 @@ This repository contains all the files used to build my [GitPage](https://tanyay
 1. Adjust max. no of post on the front page 
 2. Clear the following to-dos in draft 
 
-a. Neural network project
-b. CSE571 Review
-
+  a. Neural network project
+  b. CSE571 Review
+  c. More makeover monday 
 
 # Development Tips
 1.  Create new page: create markdown file and remember to change the permanent link,eg. /resume/
