@@ -4,6 +4,8 @@ title:  "The Year of Aggressive Learning"
 tags: update
 ---
 
+<img src="https://github.com/tanyayt/tanyayt.github.io/blob/master/images/noun_License_.png?raw=true" width=200px>
+
 If I have to pick a word to describe the year of 2020, I will say it is a year of learning and sel-development (okay, that's more than one word :) ) 
 
 When the world literally stopped spinning in March, admitedly I was panicing as many others. I tried several meditating tips, doing indoor exercises, practicing meditation, watching lots of Netflix over the weekend because there is nowhere to go, watching news or maybe too much news that just worried me even more. It might sound crazy but what really calmed me down is to learn. I had a laundry list of things I had always wanted to do. So I decided, this is it, and learning and self-development is my calming power. So here is what I have completed, and greatly enjoyed: 
