@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Update"
+title:  "Bikeshare Data Exploration"
 tags: python
 ---
 
