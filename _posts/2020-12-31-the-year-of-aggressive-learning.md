@@ -12,7 +12,7 @@ When the world literally stopped spinning in March, admitedly I was panicing as 
 
 1. I started from wrapping up the Data Science Specialization from Coursera 
 
-2. Finally able to obtain a Tableay Analyst certificate, when Tableau temporarily made the assessment free 
+2. Finally able to obtain a Tableau Analyst certificate, when Tableau temporarily made the assessment free 
 
 3. Finished the first Data Scientist nanodegree with Udacity and started building this blog 
 
