@@ -2,7 +2,8 @@
 This repository contains all the files used to build my [GitPage](https://tanyayt.github.io/)
 
 # Coming Soon
-1. Adjust max. no of post on the front page 
+
+
 2. Clear the following to-dos in draft 
 
   a. Neural network project
