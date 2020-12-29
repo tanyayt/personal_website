@@ -9,8 +9,6 @@ Throughout my career, I have been a teacher, a researcher, a data magician, and 
 
 [Resume](https://tanyayt.github.io/resume/)
 
-[Projects](https://tanyayt.github.io/project/)
-
 ## Contact Me
 
 [tanya.yt.tan@gmail.com](mailto:tanya.yt.tan@gmail.com)
