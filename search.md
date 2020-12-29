@@ -1,7 +1,7 @@
 ---
 title: "Search"
 permalink: /search.html
-layout: default
+layout: page
 ---
 
 <div id="search-container">
