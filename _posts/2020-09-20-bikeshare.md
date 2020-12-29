@@ -10,7 +10,7 @@ Bike-sharing programs have been growing in popularity around the world as a new 
 
 Here is how it works: 
 
-<img src="https://github.com/tanyayt/bikeshare/blob/main/demo.gif?raw=true" alt="demo" width="500" margin="5"/>
+<img src="https://github.com/tanyayt/bikeshare/blob/main/demo.gif?raw=true" alt="demo" width="1000" margin="5"/>
 
 In a nutshell, you would first select the city you are interested in, and sepecify the month and day of week. The output of the program provides user stats by gender, subscription-status, most common start station, and most common start hours etc. 
 
