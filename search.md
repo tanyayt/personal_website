@@ -1,20 +1,22 @@
 ---
 title: "Search"
 permalink: /search/
-layout: default
+layout: page
 ---
 
-
 <!-- Html Elements for Search -->
-<div id="search-container">
-<input type="text" id="search-input" placeholder="search...">
+
+<div id="search-container" height="100px">
+<input type="text" id="search-input" placeholder="Search...">
 <ul id="results-container"></ul>
 </div>
 
 <!-- Script pointing to search-script.js -->
+
 <script src="/js/search-jekyll.js" type="text/javascript"></script>
 
 <!-- Configuration -->
+
 <script>
 SimpleJekyllSearch({
   searchInput: document.getElementById('search-input'),
