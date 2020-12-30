@@ -9,6 +9,7 @@
       "category" : "{{post.categories | join: ', '}}",
       "tags"     : "{{ post.tags | join: ', ' }}",
       "date"     : "{{ post.date | date: '%B %d, %Y'}}",
+      "content"  : "{{ page.content | strip_html | strip_newlines }}",
       "discription" : "{{post.description | strip_html | strip_newlines | escape }}"
 
     } {% unless forloop.last %},{% endunless %}
