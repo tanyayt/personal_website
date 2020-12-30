@@ -19,5 +19,3 @@ In a nutshell, you would first select the city you are interested in, and sepeci
 Data Provided by  [Motivate](https://www.motivateco.com/)
 
 
-
-# 
