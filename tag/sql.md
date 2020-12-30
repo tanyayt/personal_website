@@ -1,6 +1,6 @@
 ---
 layout: tagpage
-title: "Tag: SQL"
+title: "Tag: sql"
 tag: sql
 ---
 
