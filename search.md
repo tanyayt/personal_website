@@ -1,30 +1,19 @@
----
-title: "Search"
-permalink: /search/
-layout: default
----
+```html
+<!-- Html Elements for Search -->
+<div id="search-container">
+<input type="text" id="search-input" placeholder="search...">
+<ul id="results-container"></ul>
+</div>
 
- <form action="/search.html" method="get">
-   <label for="search-box">Search</label>
-   <input type="text" id="search-box" name="query">
-   <input type="submit" value="search">
- </form>
+<!-- Script pointing to search-script.js -->
+<script src="/js/search-jekyll.js" type="text/javascript"></script>
 
- <ul id="search-results"></ul>
-
- <script>
-   window.store = {
-     {% for post in site.posts %}
-       "{{ post.url | slugify }}": {
-         "title": "{{ post.title | xml_escape }}",
-         "author": "{{ post.author | xml_escape }}",
-         "category": "{{ post.category | xml_escape }}",
-         "content": {{ post.content | strip_html | strip_newlines | jsonify }},
-         "url": "{{ post.url | xml_escape }}"
-       }
-       {% unless forloop.last %},{% endunless %}
-     {% endfor %}
-   };
- </script>
- <script src="/js/lunr.min.js"></script>
- <script src="/js/search.js"></script>
+<!-- Configuration -->
+<script>
+SimpleJekyllSearch({
+  searchInput: document.getElementById('search-input'),
+  resultsContainer: document.getElementById('results-container'),
+  json: '/search.json'
+})
+</script>
+```
