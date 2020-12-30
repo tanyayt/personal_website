@@ -151,7 +151,7 @@
         resultsContainer: null,
         json: [],
         success: Function.prototype,
-        searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}-{date}</a></li>',
+        searchResultTemplate: '<li><a href="{url}" title="{desc}">{title} (<i>{date}</i>)</a></li>',
         templateMiddleware: Function.prototype,
         sortMiddleware: function() {
           return 0
