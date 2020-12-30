@@ -5,6 +5,18 @@ layout: default
 <article class="post">
   <h1>{{ page.title }}</h1>
 
+  <! –– to add tags  ––>
+
+  <div class="tag">
+  <span>Tags:
+    {% for tag in page.tags %}
+      {% capture tag_name %}{{ tag }}{% endcapture %}
+      <a href="/tag/{{ tag_name }}"><nobr>{{ tag_name }}</nobr>&nbsp;</a>
+    {% endfor %}
+  </div>
+
+  <! –– end of adding tags  ––>
+
   <div class="entry">
     {{ content }}
   </div>
@@ -12,16 +24,6 @@ layout: default
   <div class="date">
     Written on {{ page.date | date: "%B %e, %Y" }}
   </div>
-<! –– to add tags  ––>
 
-<div class="tag">
-<span>Tags:
-  {% for tag in page.tags %}
-    {% capture tag_name %}{{ tag }}{% endcapture %}
-    <a href="/tag/{{ tag_name }}"><nobr>{{ tag_name }}</nobr>&nbsp;</a>
-  {% endfor %}
-</div>
-
-<! –– end of adding tags  ––>
 
 </article>
