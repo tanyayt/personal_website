@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Review: Codecademy Data Science Career Path"
-tags: data-science python natural-language-processing machine- learning
+tags: data-science python natural-language-processing machine-learning
 ---
 
 # What I have learned
