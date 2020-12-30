@@ -19,10 +19,10 @@ That being said, I think it is just the next useful analytics tool to be added t
 
 Learning resource: [Google Analytics Academy](https://analytics.google.com/analytics/academy/)
 
-| Date            | Module                         | Status      |
-| --------------- | ------------------------------ | ----------- |
-| Dec 19 - Dec20  | Google Analytics for Beginners | Done        |
-| Dec 26 - Dec 27 | Advanced Google Analytics      | In progress |
+| Date            | Module                         | Status |
+| --------------- | ------------------------------ | ------ |
+| Dec 19 - Dec20  | Google Analytics for Beginners | Done   |
+| Dec 26 - Dec 27 | Advanced Google Analytics      | Done   |
 
 I will come back and update this post as I make progress :) Happy learning to myself! 
 
