@@ -1,5 +1,6 @@
 ---
 layout: tagpage
-title: "Tag: tableau"
+title: "Tag: Tableau"
 tag: tableau
 ---
+
