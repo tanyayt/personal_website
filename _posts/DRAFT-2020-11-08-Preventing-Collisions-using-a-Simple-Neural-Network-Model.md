@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Predicting Robot Collisions using a Simple Neural Network Model"
-tags: artificial intelligence
+title:  "Predicting Collisions using a Simple Neural Network Model"
+tags: artificial-intelligence python machine-learning
 ---
 
 
@@ -19,15 +19,19 @@ The goal of this project is to predict collisions based on robot's sensor values
 
 The metric used will be loss on testing data. 
 
-# Analysis 
+?? false positive?? 
 
-## Data Exploration
+# The Simulated Environment 
+
+gif of robot wandering entirely random
+
+# Neural Network Model
 
 
 
-# Results and Conclusion 
+# Results & Conclusion
 
-
+false positive rate; traing outcomes gif 
 
 
 
