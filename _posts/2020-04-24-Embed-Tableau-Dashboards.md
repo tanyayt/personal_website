@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Embedding Tableau Dashboards
+title:  "Embedding Tableau Dashboards"
 tags: web-development tableau
 ---
 

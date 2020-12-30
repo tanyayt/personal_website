@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Learning Google Analytics"
-tags: "self-improvement"
+tags: self-improvement
 
 ---
 

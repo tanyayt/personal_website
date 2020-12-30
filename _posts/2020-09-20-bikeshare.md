@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Bikeshare Data Exploration"
-tags: python
+tags: python data-science
 ---
 
 In this project, I built a simple python program to answer user-defined questions about Bikeshare data in New York City, Chicago, and Washington, DC. 

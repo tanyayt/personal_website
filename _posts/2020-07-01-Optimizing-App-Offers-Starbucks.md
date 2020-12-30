@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Optimizing Starbucks App Offers with Machine Learning Algorithm "
+tags: python machine-learning data-science sales-analytics
 ---
 
 <img src="https://github.com/tanyayt/tanyayt.github.io/blob/master/images/header_starbucks_app.jpg?raw=true" width="500px">

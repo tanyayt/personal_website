@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "The Year of Aggressive Learning"
-tags: update
+tags: update self-improvement
 ---
 
 <img src="https://github.com/tanyayt/tanyayt.github.io/blob/master/images/noun_License_.png?raw=true" width=200px>
