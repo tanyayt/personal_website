@@ -1,4 +1,10 @@
-```html
+---
+title: "Search"
+permalink: /search/
+layout: default
+---
+
+
 <!-- Html Elements for Search -->
 <div id="search-container">
 <input type="text" id="search-input" placeholder="search...">
@@ -16,4 +22,3 @@ SimpleJekyllSearch({
   json: '/search.json'
 })
 </script>
-```
