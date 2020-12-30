@@ -13,7 +13,7 @@ tags: artificial intelligence
 
 ## Problem Statement 
 
-The goal of this project is to predict a collision based on robot's sensor values. 
+The goal of this project is to predict collisions based on robot's sensor values. 
 
 ## Metric
 
