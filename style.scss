@@ -127,6 +127,14 @@ img {
   font: 18px/1.4 $helvetica;
 }
 
+//site-tag is used in Site Cloud; not on the individual post
+.site-tag a {
+    display: inline-block;
+    margin-right: 12px;
+    font: 18px/1.4 $helvetica;
+    color: $blue
+}
+
 
 // Specify the color of the selection
 ::-moz-selection {
