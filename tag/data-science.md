@@ -1,5 +1,5 @@
 ---
 layout: tagpage
-title: "Tag: data science"
-tag: "data science"
+title: "Tag: Data Science"
+tag: data-science
 ---
