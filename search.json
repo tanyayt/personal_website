@@ -14,4 +14,17 @@
 
     } {% unless forloop.last %},{% endunless %}
   {% endfor %}
+  ,
+  {% for page in site.pages %}
+   {
+     {% if page.title != nil %}
+        "title"    : "{{ page.title | escape }}",
+        "category" : "{{ page.category }}",
+        "tags"     : "{{ page.tags | join: ', ' }}",
+        "url"      : "{{ site.baseurl }}{{ page.url }}",
+        "date"     : "{{ post.date | date: '%B %d, %Y'}}",
+        "content": {{ page.content | jsonify }}
+     {% endif %}
+   } {% unless forloop.last %},{% endunless %}
+  {% endfor %}
 ]
