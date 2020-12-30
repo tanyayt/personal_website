@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  Embedding Tableau Dashboards
+Tags: "web development",tableau
 ---
 
 This site is built using [Jekyll Now repository](https://github.com/barryclark/jekyll-now) which allows me to use Markdown files to publish pages and blog posts. Since I have published a handful of Tableau Dashboards on [Tableau Public](https://public.tableau.com/profile/tanya.t3433#!/), I would like to show case those on my personal website too
