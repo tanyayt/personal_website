@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "My Experience with Udacity Nanodegree Program: Programming for Data Science using Python"
-tags: python sql data-science natural-language-processing
+tags: python data-science natural-language-processing sql
 ---
 
 I am excited to share my learning experience with Udacity's [Programming for Data Science using Python](https://www.udacity.com/course/programming-for-data-science-nanodegree--nd104). I will talk about my timeline, what I have learned, and personal reflections on lifelong learning.
