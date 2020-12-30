@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Tableau Dashboard: How affordable is auto insurance across the U.S.? "
-tags: tableau, makeovermonday
+tags: tableau makeovermonday
 ---
 
 
