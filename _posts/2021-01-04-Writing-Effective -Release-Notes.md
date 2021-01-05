@@ -65,7 +65,7 @@ Be sure to drop the technical acronyms and focus on what the user can do:
 
 ## Reference 
 
-* [Asana Release Notes] (https://asana.com/guide/help/faq/release-notes)
+* [Asana Release Notes](https://asana.com/guide/help/faq/release-notes)
 * [New product launch email subject lines @Sellfy](https://blog.sellfy.com/new-product-launch-email-subject-lines/)
 * [Anatomy of an effective product release email by Ty Magnin](https://www.appcues.com/blog/anatomy-of-an-effective-product-release-email)
 * [Emojipedia](https://emojipedia.org/)
