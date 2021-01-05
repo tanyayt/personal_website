@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "Writing Release Notes"
+title:  "Writing Effective Release Notes"
 tags: product-management
 ---
+<img src="https://github.com/tanyayt/tanyayt.github.io/blob/master/images/email.png?raw=true" height=400px>
+
 A key aspect of agile project is rapid delivery of new features. Each sprint is built on a set of impovements and issue resolutions and the release notes can help the development team, stakeholders and end-users to keep track. 
 
 Here is the thought process I go about in writing release notes: 
-
-<img src="https://github.com/tanyayt/tanyayt.github.io/blob/master/images/email.png?raw=true" height=400px>
 
 ## 1. Identify the purpose
 
