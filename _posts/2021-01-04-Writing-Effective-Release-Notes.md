@@ -17,7 +17,7 @@ Here is the thought process I go about in writing release notes:
 
 Example Answers: 
 
-- To formally inform the release of features in discussions (e.g. I might have initated a discussion with the Data Steward; I then let him/her now the revised data form is deployed in production) 
+- To formally inform the release of features in discussions (e.g. I might have initated a discussion with the Data Steward; I then let him/her know the revised data form is deployed in production) 
 - To prepare the support team of potential questions that could be asked (new features can also mean new questions or issues reported from the end-users. So the release notes provide necessary context) 
 - The release notes is a formal response to feature requests and help elicit more helpful feedback from the end-users and various stakeholders in the organization
 - The primary audience is the end users. I hope they glance over the release notes and most importantly to more actively engage with the product
