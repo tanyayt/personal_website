@@ -8,15 +8,15 @@ permalink: /resume/
 
 # Tanya Tan
 
-**Business Intelligence & Data Science** | Transforming data into actionable insights and business solutions
+**Business Intelligence & Data Science** \| Transforming data into actionable insights and business solutions
 
 - Technical Skills: Python (PyTorch, Tensorflow, scikit-learn), SQL, Snowflake, Tableau, R, Looker, UX Research
 - Additional Skills: project management, teamwork, adaptability, self-directed learning
 
 ## Work Experience
-**Analyst, Sales Operations** | *[Cengage Learning](https://www.cengage.com)*, Boston, MA \| 2020 - Present
+**Analyst, Sales Operations** \| *[Cengage Learning](https://www.cengage.com)*, Boston, MA \| 2020 - Present
 
-**Research Analyst, Institutional Research** | *Langara College*, Vancouver, Canada  \|  2018- 2020
+**Research Analyst, Institutional Research** \| *Langara College*, Vancouver, Canada  \|  2018- 2020
 
 **Education Specialist, Chemistry** \| *University of British Columbia*, Vancouver, Canada \| 2017 - 2018
 
@@ -72,4 +72,4 @@ permalink: /resume/
 
 
 
-{{ site.baseurl }}/images/doc/TanyaTan-Resume-2021.pdf)
+[View/Download PDF]({{ site.baseurl }}/images/doc/TanyaTan-Resume-2021.pdf)
