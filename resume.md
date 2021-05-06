@@ -52,7 +52,7 @@ permalink: /resume/
 
 * KPI dashboard with usage trend, and sales perofrmance measures by territory and by product
 
-**Predicting Collisions using a Simple Neural Network Model** | [Blog Post](https://tanyayt.github.io/Preventing-Collisions-using-a-Simple-Neural-Network-Model)
+**Predicting Collisions using a Simple Neural Network Model**  \| [Blog Post](https://tanyayt.github.io/Preventing-Collisions-using-a-Simple-Neural-Network-Model)
 
 * Trained robots to prevent collisions in a simulated environment with 99%+ accuracy, using artificial neural networks
 
