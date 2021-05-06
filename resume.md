@@ -14,7 +14,7 @@ permalink: /resume/
 - Additional Skills: project management, teamwork, adaptability, self-directed learning
 
 ## Work Experience
-**Analyst, Sales Operations** | *[Cengage Learning](https://www.cengage.com)*, Boston, MA \| Present
+**Analyst, Sales Operations** | *[Cengage Learning](https://www.cengage.com)*, Boston, MA \| 2020 - Present
 
 **Research Analyst, Institutional Research** | *Langara College*, Vancouver, Canada  \|  2018- 2020
 
