@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Sales Analytics Data Reporting Strategy"
-tags: data-strategy, sales-analytics, leadership
+tags: data-strategy sales-analytics leadership
 ---
 <img src="https://github.com/tanyayt/tanyayt.github.io/blob/master/images/sales_analytics_data_reporting_strategy.gif?raw=true" height = 400px>
 
