@@ -12,5 +12,5 @@ In this presentation, I highlighted:
 - How to develop, pilot, and scale up sales reporting strategy? 
 - What are the guiding principles in designing sales analytics products? And what are the example impelmentations to apply these principles? 
 
-Download [PDF](https://github.com/tanyayt/tanyayt.github.io/blob/master/images/doc/TanyaTan_sales_analytics_data_reporting_strategy.pdf) version here
+Download [PDF]({{ site.baseurl }}/images/doc/TanyaTan_sales_analytics_data_reporting_strategy.pdf)
 
