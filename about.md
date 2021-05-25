@@ -9,6 +9,8 @@ I am always interested in understanding intelligence - how we humans develop int
 
 I look forward to further expanding my experience in data science, particularly in deep learning. I am excited to be part of the community leveraging the power of artificial intelligence and making the world a better place. 
 
+<iframe src="https://prezi.com/p/wigchjr8b67n/embed/" id="iframe_container" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" allow="autoplay; fullscreen" height="800" width="1422"></iframe>
+
 [Resume](https://tanyayt.github.io/resume/)
 
 ## Contact Me
