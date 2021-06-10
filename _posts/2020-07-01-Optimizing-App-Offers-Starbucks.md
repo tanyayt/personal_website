@@ -12,7 +12,7 @@ tags: python machine-learning data-science sales-analytics
 
 Customer Loyalty program is one of the most widely used marketing strategies to improve customer engagement. Starbucks sends their promotional offers to customers via email, social media channels or to their mobile Apps. It is important to understand customer behaviors in response to these offers to optimize the offer selections for them. In this project, I took a deep dive into Starbucks App data and built a machine learning model to predict whether a user will complete a promotional offer. 
 
-The project is part of Udacity's Data Scientist Nanodegree program and the datasets are simulated and provided by Starbucks. The raw data are in json format, providing information about promotional offers (e.g. offer type and duration), customers (e.g. demographic and membership), and their transaction history in the app (e.g. when offers are received, viewed and completed). 
+The raw data are in json format, providing information about promotional offers (e.g. offer type and duration), customers (e.g. demographic and membership), and their transaction history in the app (e.g. when offers are received, viewed and completed). 
 
 ## Problem Statement 
 
@@ -34,17 +34,16 @@ This section outlines the key steps included in data exploration, cleaning, pre-
 
 *   `portfolio.json`, 10 rows X 6 columns  - containing offer ids and meta data about each offer (duration, type, etc.)
 *   id (string) - offer id
-    
+  
 *   offer_type (string) - type of offer ie BOGO, discount, informational
-    
+  
 *   difficulty (int) - minimum required spend to complete an offer
-    
+  
 *   reward (int) - reward given for completing an offer
-    
+  
 *   duration (int) - time for offer to be open, in days
-    
+  
 *   channels (list of strings)
-    
 
 As shown below, the raw data has promotional channels all together and duration recorded in days. 
 
@@ -71,7 +70,6 @@ After processing, the channel column is now replaced by 3 dummy-coded columns `h
     -   id (str) - customer id
     
     -   income (float) - customer's income
-    
 
 *Before Cleaning*: The dataset contains missing values and odd ages such as 118. `become_member_on` is an int variable but not suitable for modelling. 
 
@@ -434,12 +432,14 @@ Till now, I have successfully built a predictive model predicting whether a cust
 There are some known reasons that may have negatively affected the model's performance, that we can improve on with additional data: 
 
 *   Since there is 0 offer complete event for informational offers in the dataset, we faced a challenge of having no data predicting the outcome for informational offer An assumption has to be made, that when customers view and make purchase during the active period of an informational offer, we consider them complete the offer. However, this assumption can be better refined, if we know what product the informational offer is about. For example, if the informational offer is about latte, and the customer purchases a cup of Americano, we should not consider the customer as influenced by, or completed the offer. Unfortunately, targeted product of each offer, is not provided in the dataset. 
-
 *   Another deficiency in the data is the granularity of time recording. Many events can happen within an hour so a real timestamp may provide more accurate filtration of, for instance, offer views after completion or expiry times. 
+*   *Edit 2021-06-10*: in outlier treatment, a better approach is to consider windsorizing extreme values to the upper or lower bound of the normal range for the benefit of 1) retaining the statistical power of the same sample size 2) reducing the change of the covariance compared to simply just remoing all outliers. 
 
 The dataset however, does offer some information that I haven't used yet in the model. For instance, the total purchase amounts of each customer, before receiving an offer. This will serve as a good metric for customer engagement. More work can be done to reshape the data and incorporate this variable. 
 
 **END**
+
+- 
 
 -- 
 
