@@ -10,7 +10,7 @@ In this presentation, I highlighted:
 - What is sales analytics and why it is important to sales organization? 
 - Why do we need data and reporting strategy and what could happen if we don't have a well-defined and well executed data and reporting strategy? 
 - How to develop, pilot, and scale up sales reporting strategy? 
-- What are the guiding principles in designing sales analytics products? And what are the example impelmentations to apply these principles? 
+- What are the guiding principles in designing sales analytics products? And what are the example implementations to apply these principles? 
 
 Download [PDF]({{ site.baseurl }}/images/doc/TanyaTan_sales_analytics_data_reporting_strategy.pdf)
 
